@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<title>GO TO PROM WITH ME??!!!</title>
+    <style>
+        body {
+        	background: linear-gradient(to bottom right, PowderBlue, Lavender);
+            min-height: 100vh;
+            color: CornflowerBlue;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        ul {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div id="player" style="display:none"></div>
+
+<div id="page0">
+	<h1>Super Serious Security Check</h1>
+    <p>Enter your name to prove your identity:</p>
+    <input type="text" id="userName" oninput="updateNames()" placeholder="Firstname Lastname">
+    <button onclick="goToPage(1)">Confirm</button>
+</div>
+
+<div id="page1" style="display: none;">
+    <h1>Super Serious Security Check</h1>
+    <p>Please turn on your <u>VOLUME</u> to ensure you are a human...</p>
+    <div class="loader"></div> 
+</div>
+
+<div id="page2" style="display:none">
+    <h1>Welcome the <span style="background: linear-gradient(to right, red, orange, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">VIRTUAL PROMPOSAL</span> OF <span id="name1" style="text-transform: uppercase;"></span>!!!!</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMpON9Gkpg8oL6mKjwvZQQgostu_b8EXFKQ&s">
+    <p>Yippee!! I'm sure you already wanna go with me but yk just to be safe and ✨gentlemanly✨ about it</p>
+    <p>(This is like siiix seeeven pages long btw)</p>
+    <button onclick="goToPage(3)">I'm listening...</button>
+</div>
+
+<div id="page3" style="display:none">
+    <h1>So bestie boo, consider the following:</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEY7vytG7vDAykkhJExUqVoLU0EpJKaxvwIw&s">
+    <p>We both got no game</p>
+    <p>Prom is coming up</p>
+    <h3>Conclusion: <i>We're gonna look like two GAMELESS showerless chuds at PROM</i></h3>
+    <button onclick="goToPage(4)">Oh hell nawwww</button>
+</div>
+
+<div id="page4" style="display:none">
+    <h1>How should the student approach this situation? [5 marks]</h1>
+    <h2><u>Indicative Mark Scheme</u></h2>
+    <img width="200" src="https://static01.nyt.com/images/2024/07/31/multimedia/04EATrex-laziji-chicken-with-chiles-jqhl/04EATrex-laziji-chicken-with-chiles-jqhl-mediumSquareAt3X.jpg">
+    <ul>
+        <li>Despair of any <u>last-minute promposals</u> happening to you (1)</li>
+        <li>Finish <u>finals</u> miserably (1)</li>
+        <li>Rewatch First Frost as copium (1)</li>
+        <li>Pull up gameless and alone to the <u>venue</u> (1)</li>
+        <li>Chug fruit punch / laziji and cry (1)</li>
+    </ul>
+    <p>
+    <img src="https://i.ytimg.com/vi/-oOYVuEBO6s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDiHY1jWZQH8zQMS0h8XI-LyQsdVw">
+    <p>
+    <button onclick="goToPage(5)">That sounds like uuusss</button>
+</div>
+
+<div id="page5" style="display:none">
+    <h1>Provide a more effective alternative method. [6 marks]</h1>
+    <img src="https://i.ytimg.com/vi/yVDnEICj5nk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAAne_DFhE2eQvhQSZhuDF7feHqiw">
+    <h2><u>Indicative Mark Scheme</u></h2>
+    <img width="200" src="https://preview.redd.it/what-is-it-v0-j52njc6wvbpe1.jpeg?auto=webp&s=a9d2b340f133cb94c7ad0db3d4633cbd8b4f6927">
+    <ul>
+        <li>ACCEPT this wonderfully made <u>platonic promposal</u> / <u>plomposal</u> <sub>that I defo didn't cook up at 1am running on pure jin ramen</sub> (1)</li>
+        <li>Finish <u>finals</u> on a STRONG NOTE (1)</li>
+        <li>Rewatch First Frost as HOPIUM??!! (1)</li>
+        <li><b>Pull up like a GAMEFUL RIZZLORD to the <u>venue</u> with your fine shyt plomposaller (?) (1)</b></li>
+        <li>Chug SOJU like a KING (1)</li>
+        <li>Pull an actual fine unc at prom as a bonus. IF you want (1)</li>
+    </ul>
+    <p>
+    <button onclick="goToPage(6)">FULL MARRRKKS</button>
+</div>
+
+<div id="page6" style="display:none">
+    <h1>SO.</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91Bdey1QmPmBk9cDUjRqbDvm3IzwRc0d0ag&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPU75-HMttesA2YWIOcr1fj6ZQkBtVwEL2OQ&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsbivoZoKYePAj7FBc5J2bykHDuwhX2ha2A&s">
+    <p>
+    <sub>(^^ pretend im one of these)</sub>
+    <p>WILL YOU go to PROM with ME????!!!!!</p>
+    <button id="yesBtn">YES!!!</button>
+    <button id="noBtn">NOOOO (ragebait) (click it i dare u)</button>
+    <h3 style="color: red;" id="response"></h3>
+</div>
+
+<div id="page7" style="display:none">
+    <h1>LETS GOOOOOO</h1>
+    <img width="300" src="https://pbs.twimg.com/media/GrXQrWjXMAAusGP?format=jpg&name=large">
+    <img width="300" src="https://preview.redd.it/which-is-one-pair-you-are-dying-to-see-on-screen-for-me-its-v0-o3crslxm9ame1.jpg?width=495&format=pjpg&auto=webp&s=dbe9f11b28d3bb3e15110506f15687f6fe6da78d">
+    <img width="300" src="https://i.ytimg.com/vi/_3pbAfsLqp0/hqdefault.jpg">
+    <p>
+    <sub>^^ AWW THEY'RE ALL SO HAPPY!!!</sub>
+    <p>Love ya my one (1) and only (ONLY) <span style="text-transform: lowercase;" id="name2"></span> &lt;3 &lt;3</p>
+    <p>We WILL look so gameful and rizzly at prom now. All thanks to the WISE decision made by your beautiful gorgeous genius intelligent brain</p>
+    <button onclick="goToPage(8)">YAYYYY</button>
+</div>
+
+<div id="page8" style="display:none">
+    <h1>It's a DATE (no going back)!!!</h1>
+    <sub>Promposal acceptance <span id="currentDate"></span> – Signature: <u><span style="font-family: 'Bradley Hand', cursive; color: hotpink;" id="name3"></span></u></sub>
+    <p>
+    <img width="200" src="https://i.ytimg.com/vi/OtH00JF-DtE/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLCVLltTang0bVXAUZtFSucl1g2SzQ&usqp=CCk">
+    <p>Go crush those finals bbg!!!</p>
+</div>
+
+<script>
+    let player;
+    let isPlaying = false;
+    document.getElementById("currentDate").textContent = new Date().toLocaleDateString();
+    
+    function goToPage(pageNum) {
+  		let prev = parseInt(pageNum, 10) - 1;
+      	document.getElementById('page' + prev).style.display = 'none';
+        document.getElementById('page' + pageNum).style.display = 'block';
+        if (pageNum === 0 && player) {
+            toggleMusic()
+        }
+        if (pageNum === 1) {
+            setTimeout(function() {
+                goToPage(2);
+            }, 5000);
+        }
+        if (pageNum === 2) {
+            toggleMusic()
+        }
+    }
+    
+    function updateNames() {
+    	let nameValue = document.getElementById("userName").value;
+    	document.getElementById("name1").textContent = nameValue;
+    	document.getElementById("name2").textContent = nameValue;
+    	document.getElementById("name3").textContent = nameValue;
+    }
+    
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: 'dQw4w9WgXcQ',
+        playerVars: {
+          'loop': 1,
+          'playlist': 'dQw4w9WgXcQ',
+          'autoplay': 0,
+          'controls': 0,
+          'showinfo': 0,
+          'modestbranding': 1
+        },
+        events: {
+          'onReady': function () {
+                player.pauseVideo();
+                isPlaying = false;
+          }
+        }
+      });
+    }
+    function toggleMusic() {
+      if (isPlaying) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
+      }
+      isPlaying = !isPlaying;
+    }
+      
+    document.getElementById('yesBtn').onclick = function() {
+        goToPage(7);
+    }
+    
+    let noAttempts = 0;
+    const noBtn = document.getElementById('noBtn');
+    const response = document.getElementById('response');
+    
+    noBtn.onclick = function() {
+        noAttempts++;
+        if (noAttempts < 3) {
+            response.innerText = 'Nice try... IT RAN AWAY!!!';
+            noBtn.style.position = 'absolute';
+            noBtn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            noBtn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        } else if (noAttempts <7) {
+            response.innerText = 'Bro istg JS SAY YESSSS';
+            noBtn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            noBtn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        } else if (noAttempts < 10) {
+            response.innerText = 'OK SERIOUSLY IM JUST GONNA PRETEND YOU SAID YES OK. MOVING ON';
+            noBtn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            noBtn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        } else {
+            goToPage(7);
+        }
+    }
+</script>
+
+</body>
+</html>
